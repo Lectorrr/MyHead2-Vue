@@ -5,6 +5,7 @@ import AppIndex from '@/components/home/AppIndex'
 import Login from '@/components/Login'
 import Home from '@/components/home/Home'
 import LibraryIndex from '@/components/library/LibraryIndex'
+import NoteBookIndex from '@/components/NoteBook/NoteBookIndex'
 
 Vue.use(Router)
 
@@ -38,7 +39,18 @@ export default new Router({
         {
           path: '/libraryIndex',
           name: 'LibraryIndex',
-          component: LibraryIndex
+          component: LibraryIndex,
+          meta: {
+            requireAuth: true
+          }
+        },
+        {
+          path: '/noteBookIndex',
+          name: 'NoteBookIndex',
+          component: NoteBookIndex,
+          meta: {
+            requireAuth: true
+          }
         }
       ]
     },
