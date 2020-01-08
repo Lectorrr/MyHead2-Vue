@@ -2,6 +2,8 @@
 <template>
   <div>
     Hello World!
+    <br />
+    Welcome to My Vue.js App: TuoTuo Book
   </div>
 </template>
 
